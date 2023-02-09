@@ -15,3 +15,9 @@ set(GLWF_INSTALL OFF CACHE BOOL "" FORCE)
 
 add_subdirectory(external/glfw)
 target_link_libraries(${PROJECT_NAME} glfw)
+
+add_subdirectory(external/glad)
+target_link_libraries(${PROJECT_NAME} glad)
+
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
